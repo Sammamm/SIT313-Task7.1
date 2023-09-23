@@ -1,0 +1,74 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff3366, #ff9900);
+}
+
+.innerBox {
+  min-width: 480px;
+  width: fit-content;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Indent the labels */
+.innerBox label {
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ff3366;
+}
+
+.footer button {
+  outline: none;
+  border: none;
+  background-color: #9900ff;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 14px 24px;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.footer button:disabled {
+  background-color: gray !important;
+  cursor: not-allowed;
+}
+
+.footer button:hover {
+  background-color: #aa2aff;
+  transform: scale(1.05);
+}
+
+.footer p {
+  font-weight: 700;
+  color: #333;
+}
+
+.footer p span a {
+  font-weight: bold;
+  color: #9900ff;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
